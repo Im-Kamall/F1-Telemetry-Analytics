@@ -6,7 +6,9 @@ The project analyses publicly available Formula 1 data from the **2024 Bahrain G
 
 ## Live Dashboard
 
-**Coming soon:** The interactive Streamlit dashboard will be published here.
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://f1-telemetry-analytics-edqp4urwcdu94aaindts5d.streamlit.app/)
+
+**[Launch F1 Telemetry Analytics Dashboard](https://f1-telemetry-analytics-edqp4urwcdu94aaindts5d.streamlit.app/)**
 
 ## Project Overview
 
@@ -56,18 +58,18 @@ The dataset contains publicly available historical data. It is not proprietary F
 
 ```text
 F1-Telemetry-Analytics/
-├── dashboard/
-│   └── app.py
-├── data/
-│   ├── raw/
-│   └── processed/
-├── notebooks/
-├── reports/
-├── src/
-├── tests/
-├── .gitignore
-├── README.md
-└── requirements.txt
+â”œâ”€â”€ dashboard/
+â”‚   â””â”€â”€ app.py
+â”œâ”€â”€ data/
+â”‚   â”œâ”€â”€ raw/
+â”‚   â””â”€â”€ processed/
+â”œâ”€â”€ notebooks/
+â”œâ”€â”€ reports/
+â”œâ”€â”€ src/
+â”œâ”€â”€ tests/
+â”œâ”€â”€ .gitignore
+â”œâ”€â”€ README.md
+â””â”€â”€ requirements.txt
 ```
 
 ## Running the Dashboard Locally
@@ -135,7 +137,7 @@ python src/data_analysis.py
 ## Important Methodology Notes
 
 - Missing-timestamp telemetry records are excluded from the cleaned dataset; the original raw data is preserved locally.
-- The representative-lap analysis uses an exploratory 85–95 second filter. This is not an official FIA clean-lap classification.
+- The representative-lap analysis uses an exploratory 85â€“95 second filter. This is not an official FIA clean-lap classification.
 - Candidate-lap samples are relatively small and are not fully controlled for tyre condition, fuel load, traffic or track evolution.
 - Lap consistency and combined sector rankings are exploratory comparisons, not definitive measures of driver ability.
 - Telemetry averages can include stationary or inactive periods and should be interpreted carefully.
