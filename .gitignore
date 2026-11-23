@@ -1,0 +1,48 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+
+# Data: exclude everything by default
+data/*
+!data/raw/
+!data/processed/
+
+# Only dashboard-required raw datasets
+data/raw/*
+!data/raw/drivers.csv
+!data/raw/laps.csv
+!data/raw/verstappen_telemetry.csv
+
+# Only dashboard-required processed datasets
+data/processed/*
+!data/processed/fastest_lap_leaderboard.csv
+!data/processed/all_drivers_summary.csv
+!data/processed/combined_driver_performance.csv
+
+# Local cache
+.cache/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Backup and temporary files
+dashboard/app_backup.py
+src/lap_attempt_inspection.pypython
+
+# Operating system
+.DS_Store
+Thumbs.db
